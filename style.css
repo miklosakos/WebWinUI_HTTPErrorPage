@@ -1,0 +1,88 @@
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+body{
+	background-color:#1010A2;
+	text-align:justify;
+}
+.title{
+	position:relative;
+	background-color:#A6A5AB;
+	color:#1010A2;
+	border:3px solid #A6A5AB;
+	display:table;
+	margin:0 auto;
+	top:50;
+}
+ul{
+	list-style-type:none;
+}
+li:before{
+	content:"*";
+	margin-top:20px;
+	margin-right:20px;
+}
+p,.pressanykey,ul{
+	color:#FFFFFF;
+	position:relative;
+	top:60;
+}
+p{
+	margin-left:40;
+}
+.pressanykey{
+	display:table;
+	margin:0 auto;
+	text-decoration:none;
+}
+.pressanykey:after{
+	color:#FFFFFF;
+	content:"_";
+	margin-left:10px;
+	-webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
