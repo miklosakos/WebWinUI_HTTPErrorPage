@@ -10,7 +10,7 @@
 		case "504": $errdesc="timeout!";break;
 		case "505": $errdesc="unsupported HTTP version!";break;
 		case "507": $errdesc="not enough storage!";break;
-		default: $errdesc="unkown error!";break;
+		default: $errdesc="unknown error!";break;
 	}
 ?>
 <html lang="hu">
