@@ -1,5 +1,5 @@
 <?php
-	$err=@$_GET['error'];
+	$err=@$_GET['err'];
 	$errdesc="";
 	switch($err){
 		case "404": $errdesc="couldn't find the requested file or location!"; break;
@@ -22,7 +22,7 @@
 	<body>
 		<span class="title">WebWinUI</span>
 		<p>Egy váratlan hiba történt!</p>
-		<p>The following error happened: <?phpecho $errdesc;?></p>
+		<p>The following error happened: <?php echo $errdesc; ?></p>
 		<ul class="try">
 			<li>Try visiting the file or location again.</li>
 			<li>idk, change this string or whatever else you want</li>
